@@ -6,15 +6,15 @@ import (
 )
 
 func TestFakeTest(t *testing.T) {
-	if tibiaAssetsDataMinJsonURL != "https://assets.tibiadata.com/data.min.json" {
+	if tibiaAssetsDataMinJsonURL != "http://assets.tibiadata.com/data.min.json" {
 		t.Error(errors.New("tibiaAssetsDataMinJsonURL is wrong"))
 	}
 
-	if tibiaAssetsSha256SumURL != "https://assets.tibiadata.com/sha256sum.txt" {
+	if tibiaAssetsSha256SumURL != "http://assets.tibiadata.com/sha256sum.txt" {
 		t.Error(errors.New("tibiaAssetsSha256SumURL is wrong"))
 	}
 
-	if tibiaAssetsSha512SumURL != "https://assets.tibiadata.com/sha512sum.txt" {
+	if tibiaAssetsSha512SumURL != "http://assets.tibiadata.com/sha512sum.txt" {
 		t.Error(errors.New("tibiaAssetsSha512SumURL is wrong"))
 	}
 }
